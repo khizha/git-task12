@@ -1,0 +1,36 @@
+   1  cd ..
+   2  pwd
+   3  git clone https://github.com/khizha/git-task12.git
+   4  ls -la
+   5  cd git-task12/
+   6  ls -la
+   7  git branch feature
+   8  git status
+   9  git log --oneline --all
+  10  git checkout feature
+  11  git log --oneline --all
+  12  ls -la
+  13  nano README.md
+  14  echo date >> README.md 
+  15  cat README.md 
+  16  nano README.md 
+  17  date >> README.md 
+  18  cat README.md 
+  19  git commit -am "First modification of README.md"
+  20  git log --oneline --all
+  21  echo "****************************" >> README.md 
+  22  echo "This is a second modification of this file." >> README.md 
+  23  cat README.md 
+  24  git commit -am "Second modification of README.md"
+  25  nano .gitignore 
+  26  nano .gitignore 
+  27  git commit -am "First modification of .gitignore"
+  28  nano .gitignore 
+  29  git commit -am "Second modification of .gitignore"
+  30  git log --oneline --all
+  31  git push -u origin feature
+  33  git commit --amend
+  34  git log --oneline --all
+  35  git checkout main
+  36  git merge feature
+  37  history > history.txt
